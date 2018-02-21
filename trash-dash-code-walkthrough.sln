@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trash-dash-code-walkthrough", "trash-dash-code-walkthrough.csproj", "{B872FDA8-6700-D528-0F71-B654518E46E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trash-dash-code-walkthrough.Plugins", "trash-dash-code-walkthrough.Plugins.csproj", "{974CCDBC-9446-D762-CDFB-7E811864ED7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trash-dash-code-walkthrough.Editor.Plugins", "trash-dash-code-walkthrough.Editor.Plugins.csproj", "{0E3D3E9E-95FB-D6C8-7C68-17A9B7CF8AA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B872FDA8-6700-D528-0F71-B654518E46E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B872FDA8-6700-D528-0F71-B654518E46E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B872FDA8-6700-D528-0F71-B654518E46E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B872FDA8-6700-D528-0F71-B654518E46E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{974CCDBC-9446-D762-CDFB-7E811864ED7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{974CCDBC-9446-D762-CDFB-7E811864ED7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{974CCDBC-9446-D762-CDFB-7E811864ED7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{974CCDBC-9446-D762-CDFB-7E811864ED7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E3D3E9E-95FB-D6C8-7C68-17A9B7CF8AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E3D3E9E-95FB-D6C8-7C68-17A9B7CF8AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E3D3E9E-95FB-D6C8-7C68-17A9B7CF8AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E3D3E9E-95FB-D6C8-7C68-17A9B7CF8AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
