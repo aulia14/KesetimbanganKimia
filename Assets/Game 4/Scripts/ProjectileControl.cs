@@ -7,16 +7,17 @@ public class ProjectileControl : MonoBehaviour {
     public GameObject ASAM_Projectile;
     public GameObject BASA_Projectile;
     public GameObject NETRAL_Projectile;
+    public GameObject projectilePos;
     public bool asamCondition = false;
     public bool basaCondition = false;
     public bool netralCondition = false;
-    private void Awake()
+    private void Start()
     {
         asamCondition = false;
         basaCondition = false;
         netralCondition = false;
-}
-    public void Activate_ASAM(bool benar)
+    }
+    public void Activate_ASAM(bool benar=true)
     {
         asamCondition = true;
         if (benar == asamCondition)
@@ -32,7 +33,7 @@ public class ProjectileControl : MonoBehaviour {
             NETRAL_Projectile.SetActive(false);
         }
     }
-    public void Activate_BASA(bool benar)
+    public void Activate_BASA(bool benar=true)
     {
         basaCondition = true;
         if (benar == basaCondition)
@@ -49,7 +50,7 @@ public class ProjectileControl : MonoBehaviour {
         }
         
     }
-    public void Activate_NETRAL(bool benar)
+    public void Activate_NETRAL(bool benar=true)
     {
         netralCondition = true;
         if (benar == netralCondition)
@@ -65,5 +66,10 @@ public class ProjectileControl : MonoBehaviour {
             NETRAL_Projectile.SetActive(false);
         }
     }
-
+    public void Reset () {
+		//	The reset function will Reset the game by reloading the same level
+	
+       // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
+	   transform.position = Vector3.zero;
+	}
 }

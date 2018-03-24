@@ -32,7 +32,6 @@ public class ProjectileDragging : MonoBehaviour {
 	void Update () {
 		if (clickedOn)
 			Dragging ();
-		
 		if (spring != null) {
 			if (!GetComponent<Rigidbody2D>().isKinematic && prevVelocity.sqrMagnitude > GetComponent<Rigidbody2D>().velocity.sqrMagnitude) {
 				Destroy (spring);

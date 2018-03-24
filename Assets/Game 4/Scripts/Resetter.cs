@@ -9,7 +9,7 @@ public class Resetter : MonoBehaviour {
 	
 	private float resetSpeedSqr;			//	The square value of Reset Speed, for efficient calculation
 	private SpringJoint2D spring;			//	The SpringJoint2D component which is destroyed when the projectile is launched
-	
+
 	void Start ()
 	{
 		//	Calculate the Resset Speed Squared from the Reset Speed
@@ -23,13 +23,15 @@ public class Resetter : MonoBehaviour {
 		//	If we hold down the "R" key...
 		if (Input.GetKeyDown (KeyCode.R)) {
 			//	... call the Reset() function
-			Reset ();
+			ProjectileControl pj = FindObjectOfType<ProjectileControl>();
+			pj.Reset ();
 		}
 
 		//	If the spring had been destroyed (indicating we have launched the projectile) and our projectile's velocity is below the threshold...
 		if (spring == null && projectile.velocity.sqrMagnitude < resetSpeedSqr) {
 			//	... call the Reset() function
-			Reset ();
+			ProjectileControl pj = FindObjectOfType<ProjectileControl>();
+			pj.Reset ();
 		}
 	}
 	
@@ -37,12 +39,10 @@ public class Resetter : MonoBehaviour {
 		//	If the projectile leaves the Collider2D boundary...
 		if (other.GetComponent<Rigidbody2D>() == projectile) {
 			//	... call the Reset() function
-			Reset ();
+			ProjectileControl pj = FindObjectOfType<ProjectileControl>();
+			pj.Reset ();
 		}
 	}
 	
-	void Reset () {
-		//	The reset function will Reset the game by reloading the same level
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
-	}
+	
 }

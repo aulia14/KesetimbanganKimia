@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4656387069577804}
   - component: {fileID: 212223445694113870}
   - component: {fileID: 58815667054721422}
-  - component: {fileID: 50198028638331710}
   - component: {fileID: 114043753122905574}
   m_Layer: 0
   m_Name: Object2
@@ -43,26 +42,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50198028638331710
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1123682388621162}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: -0.1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!58 &58815667054721422
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -77,7 +56,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.039821625, y: 0.71678734}
   serializedVersion: 2
-  m_Radius: 1.8748207
+  m_Radius: 1.58
 --- !u!114 &114043753122905574
 MonoBehaviour:
   m_ObjectHideFlags: 1
